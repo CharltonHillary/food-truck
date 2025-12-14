@@ -1,0 +1,28 @@
+@apiUrl = http://localhost:3010/api/v1/
+
+
+
+### all menu items endpoint
+GET {{apiUrl}}menu/
+
+### menu item by id endpoint
+GET {{apiUrl}}menu/2
+
+### all event items endpoint
+GET {{apiUrl}}events/
+
+### event item by id endpoint
+GET {{apiUrl}}events/3
+
+### post event item endpoint
+POST {{apiUrl}}events
+Content-Type: application/json
+
+{
+    "number": 5,
+	"name": "test",
+	"location": "test location",
+	"date": "2026-07-02",
+	"time": "12:00 PM - 8:00 PM"
+
+}

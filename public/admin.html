@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/styles.css">
+	<script src="site.js" defer></script>
+</head>
+<body>
+<header class = "banner">
+  <img src="banner_icecreamtruck.png" alt="Food Truck Banner" class="banner-image"> 
+  <div class="banner-text">
+  <h1>Spirited Bliss Ice Cream Truck</h1>
+  <p>Admin</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/admin.html">Admin</a>
+  </nav>
+  </div>
+</header>  
+
+<main>
+<section>
+  <h2>Add Menu Item</h2>
+  <form id="menuForm">
+    <input id = "menuNumber" name="number" placeholder="Menu Number" required>
+    <input id = "menuName" name="name" placeholder="Item Name" required>
+    <textarea id = "menuDescription" name="description" placeholder="Description"></textarea>
+    <input id = "menuPrice" name="price" type="number" step="0.01" placeholder="Price" required>
+    <input id = "menuImage" name="image" placeholder="Image URL">
+    <button type ="submit">Add Menu Item</button>
+  </form>
+</section>
+
+<section>
+  <h2>Add Event</h2>
+  <form id="eventForm">
+    <input id = "eventNumber" name ="number" placeholder = "Event Number" required>
+    <input id = "eventName" name="name" placeholder="Event Name" required>
+    <input id = "eventLocation" name="location" placeholder="Location" required>
+    <input id = "eventDate" name="date" type="date" required>
+    <input id = "eventTime" name="time" placeholder="Time" required>
+    <button type = "submit">Add Event</button>
+  </form>
+</section>
+
+</main>
+</body>
+</html>
