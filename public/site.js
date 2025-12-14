@@ -41,7 +41,7 @@ fetch("/api/v1/events")
       // link includes event number in the URL
       li.innerHTML = `
         <a href="events.html?id=${event.number}">
-          ${event.name} – ${event.date}
+          ${event.name}  ${event.date}
         </a>
       `;
       list.appendChild(li);// add this event to the list

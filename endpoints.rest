@@ -12,14 +12,14 @@ GET {{apiUrl}}menu/2
 GET {{apiUrl}}events/
 
 ### event item by id endpoint
-GET {{apiUrl}}events/3
+GET {{apiUrl}}events/7
 
 ### post event item endpoint
 POST {{apiUrl}}events
 Content-Type: application/json
 
 {
-    "number": 5,
+    "number": 7,
 	"name": "test",
 	"location": "test location",
 	"date": "2026-07-02",
